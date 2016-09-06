@@ -1,0 +1,18 @@
+/*重置样式*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;}
+a{text-decoration:none;color:#000;}
+a:hover{color:#cd0200;text-decoration:none;}
+em{font-style:normal}
+strong{font-weight:normal;}
+ul,li{list-style:none}
+img{border:0;vertical-align:middle;display:block;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+
+
+/*公用*/
+.comwidth{width:1200px;margin:0 auto;}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.left{float:left;}
+.right{float:right;}
+/*.nav_active{background:#4593fd;}*/

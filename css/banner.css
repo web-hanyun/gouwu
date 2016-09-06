@@ -1,0 +1,46 @@
+#wrap {
+    width: 720px;
+    position: relative;
+}
+#banner {
+    width: 720px;
+    height: 344px;
+    position: relative;
+    overflow: hidden;
+}
+#banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:none;
+}
+/*第一张图*/
+#banner .first {
+    display:block;
+}
+#btns {
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    height: 26px;
+}
+#btns span {
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin-right: 6px;
+    border-radius: 13px;
+    background-color: #9c9c9c;
+    line-height:26px;
+    text-align:center;
+}
+/*小圆点悬浮*/
+#btns span:hover {
+    background: #f73108;
+    color:#fff;
+    cursor:pointer;
+}
+#btns .hover {
+    background: #f73108;
+    color:#fff;
+}

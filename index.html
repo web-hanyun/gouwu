@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/banner.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="comwidth">
+                <div class="register right">
+                    <a href="">登录</a>
+                    <a href="">免费注册 <em>送50元</em></a>
+                    |
+                    <a href="">电话订购会员登录 <em>送50元</em></a>
+                    <a href="">我的风尚</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-logo">
+            <div class="comwidth">
+                <div class="logo left">
+                    <img src="img/logo.gif" alt="风尚购物">
+                </div>
+                <div class="search left">
+                    <input name="" type="text" value="请输入商品关键词或者货号" id="txt_keywords"
+                           onfocus="if(this.value=='请输入商品关键词或者货号'){this.value='';}"
+                           onblur="if(this.value ==''){this.value='请输入商品关键词或者货号'}"
+                           onkeydown="if(event.keyCode == 13){return false;}"
+                    /><input type="button" value="搜 索" id="searchclick" >
+                    <ul id="resultlist"></ul>
+                    <span>热门搜索: 手表 海参 国宾 洗衣机 拖把 窗帘 羽绒服 皮衣 蝉丝被</span>
+                </div>
+                <div class="shopping">
+                    <span><a href="">去购物车结算</a></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="comwidth com-nav">
+                <div class="main-menu left">
+                    全部商品分类
+                    <div class="menu-box">
+                        <ul class="menu1">
+                            <li><a href="">家居生活</a></li>
+                            <li><a href="">数码家电</a></li>
+                            <li><a href="">保健养生</a></li>
+                            <li><a href="">服饰配件</a></li>
+                            <li><a href="">美容美发</a></li>
+                            <li><a href="">食品健康</a></li>
+                            <li><a href="">珠宝收藏</a></li>
+                        </ul>
+                        <dl class="list">
+                            <dt>热门品牌</dt>
+                            <dd><a href="">东芝</a> &nbsp;<a href="">长虹</a>&nbsp; <a href="">美的</a>&nbsp; <a href="">康佳</a> </dd>
+                            <dd><a href="">爱仕达</a>&nbsp; <a href="">花花公子</a>&nbsp; <a href="">浪莎</a>&nbsp;<a
+                                    href="">老工匠</a></dd>
+                            <dd><a href="">妙煮妇</a> &nbsp;<a href="">红豆</a>&nbsp;<a href="">莫洛琪</a>&nbsp; <a
+                                    href="">韩束</a> </dd>
+                            <dd><a href="">槿兰</a> &nbsp; <a href="">五粮液</a>&nbsp; <a href="">泸州</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="nav left">
+                    <ul>
+                        <li> <a href="">首页</a></li>
+                        <li><a class="tv" href="">电视直播</a></li>
+                        <li> <a href="">热卖榜</a></li>
+                        <li> <a href="">风尚慧</a></li>
+                        <li> <a href="">手机购物</a></li>
+                        <li><a href="">品牌店中店</a></li>
+                    </ul>
+                </div>
+                <a class="right" href=""><img src="img/tel.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="banner clear">
+        <div class="comwidth">
+            <div class="live right">
+                <a href=""><img src="img/banner/dianshi.jpg" alt=""></a>
+            </div>
+            <div class="banner-img right">
+                <div class="banner-move" id="wrap">
+                    <div id="banner">
+                        <img src="img/banner/1.png" alt="" class="first">
+                        <img src="img/banner/2.png" alt="">
+                        <img src="img/banner/3.png" alt="">
+                        <img src="img/banner/4.png" alt="">
+                        <img src="img/banner/5.jpg" alt="">
+                    </div>
+                    <div id="btns">
+                        <span class="hover">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                    </div>
+                </div>
+                <div class="banner-bottom">
+                    <a href=""><img src="img/banner/zhuce.jpg" alt=""></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="discount">
+        <div class="comwidth ">
+            <div class="discount-left left">
+                <h2>今日特惠</h2>
+                <dl>
+                    <dt><a href=""><img src="img/discount/bed.jpg" alt=""></a></dt>
+                    <dd >开诚印花冰丝席清凉一夏套组</dd>
+                    <dd class="price">风尚价: ￥299</dd>
+                </dl>
+            </div>
+            <div class="discount-center left">
+                <h2><a href="">TV热播</a></h2>
+                <div class="discount-bottom">
+                    <div class="bot-left left">
+                        <dl class="goods1">
+                            <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                            <dd class="right">
+                                <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                <span class="reset1">立减20元</span>
+                                <span class="reset2">￥319</span>
+                            </dd>
+                        </dl>
+                        <dl class="goods2 goods1">
+                            <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                            <dd class="right">
+                                <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                <span class="reset1">立减20元</span>
+                                <span class="reset2">￥419</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="bot-center left">
+                        <dl class="goods3">
+                            <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                            <dd class="bag">
+                                <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                <span class="reset1">立减20元</span>
+                                <span class="reset2">￥279</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="bot-right left">
+                        <dl class="goods1">
+                            <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                            <dd class="right">
+                                <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                <span class="reset1">立减20元</span>
+                                <span class="reset2">￥379</span>
+                            </dd>
+                        </dl>
+                        <dl class="goods2 goods1">
+                            <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                            <dd class="right">
+                                <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                <span class="reset1">立减20元</span>
+                                <span class="reset2">￥129</span>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+            <div class="discount-right left">
+                <h2>风尚头条</h2>
+                <ul>
+                    <li><a href="">[公告]关于G20峰会期间杭州地区暂不发布的说明</a></li>
+                    <li><a href="">[公告]海南浪漫双人游</a></li>
+                    <li><a href="">[快讯]从跨界到破界,风尚购物获首届中国电视购物行业年会"年度卓越奖"</a></li>
+                    <li><a href="">[喜讯]风尚购物成功挂牌三板</a></li>
+                    <li><a href="">[帮助]如何使用礼券金编码</a></li>
+                    <li><a href="">[促销]品牌店中店商品推荐</a></li>
+                    <li><a href="">[公告]注册或电视会员升级即或50元</a></li>
+                    <li><a href="">[公告]网上订购直播商品立减30元</a></li>
+                    <li><a href="">[帮助]风尚购物说明</a></li>
+                    <li><a href="">[帮助]配送地区及运费说明</a></li>
+                    <li><a href="">[帮助]支付方式说明</a></li>
+                    <li><a href="">[帮助]售后说明</a></li>
+                    <li><a href="">[帮助]积分说明</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ad">
+        <div class="comwidth">
+            <img src="img/ad.jpg" alt="">
+        </div>
+    </div>
+    <div id="container-1F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">1F.家居生活</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/1f/liaoli.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">家居用品</a><a href="">厨浴电器</a><a href="">卧室床品</a><a href="">汽车用品</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                        <span class="reset2">￥319</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-2F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">2F.数码家电</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/2f/air.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">数码影音</a><a href="">日用电器</a><a href="">手机</a><a href="">电脑及周边</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/2f/freezer.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">韩电408升 <br/>豪华四开门冰箱</span></a>
+                                        <span class="reset2">￥2999</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></a></dt>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-3F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">1F.家居生活</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/1f/liaoli.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">家居用品</a><a href="">厨浴电器</a><a href="">卧室床品</a><a href="">汽车用品</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                        <span class="reset2">￥319</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-4F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">1F.家居生活</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/1f/liaoli.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">家居用品</a><a href="">厨浴电器</a><a href="">卧室床品</a><a href="">汽车用品</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                        <span class="reset2">￥319</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-5F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">1F.家居生活</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/1f/liaoli.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">家居用品</a><a href="">厨浴电器</a><a href="">卧室床品</a><a href="">汽车用品</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                        <span class="reset2">￥319</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-6F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">1F.家居生活</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/1f/liaoli.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">家居用品</a><a href="">厨浴电器</a><a href="">卧室床品</a><a href="">汽车用品</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                        <span class="reset2">￥319</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-7F" class="container-1F">
+        <div class="comwidth">
+            <h2 class='title'>
+                <span class="left">1F.家居生活</span>
+                <a class="right" href="">更多 &gt;</a>
+            </h2>
+            <div class="discount">
+                <div class="comwidth ">
+                    <div class="discount-left left">
+                        <a href=""><img src="img/1f/liaoli.png" alt=""></a>
+                    </div>
+                    <div class="discount-center left">
+                        <h2>
+                            <a class="sale" href="">热销商品推荐</a>
+                            &nbsp; |
+                            <span>
+                                <a href="">家居用品</a><a href="">厨浴电器</a><a href="">卧室床品</a><a href="">汽车用品</a>
+                            </span>
+
+
+                        </h2>
+                        <div class="discount-bottom">
+                            <div class="bot-left left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE <br/>复古式女士套组</span></a>
+                                        <span class="reset2">￥319</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/shen.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">玉刺正参淡赶海参套组-H</span></a>
+                                        <span class="reset2">￥419</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-center left">
+                                <dl class="goods3">
+                                    <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                    <dd class="bag">
+                                        <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                        <span class="reset2">￥279</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="bot-right left">
+                                <dl class="goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/menshoes.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">NEW BANLUCE 复古式男士套组</span></a>
+                                        <span class="reset2">￥379</span>
+                                    </dd>
+                                </dl>
+                                <dl class="goods2 goods1">
+                                    <dt class="left"><a href=""><img src="img/discount/soap.jpg" alt=""></a></dt>
+                                    <dd class="right">
+                                        <a href=""><span class="reset">妙煮妇去污膏22件组</span></a>
+                                        <span class="reset2">￥129</span>
+                                    </dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="discount-right left">
+                        <div class="bot-center left">
+                            <dl class="goods3">
+                                <dt class="bag1"><a href=""><img src="img/discount/bag.jpg" alt=""></dt></a>
+                                <dd class="bag">
+                                    <a href=""><span class="reset">路易华菲荔枝纹牛皮女包</span></a>
+                                    <span class="reset2">￥279</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="comwidth">
+            <div class="msg">
+                <span class="free">免费订阅优惠信息</span>
+                <input type="text" value="请输入您的邮箱"><input type="button" value="确认">
+                 &nbsp;<span class="send">我们会将最新的促销优惠信息发送给您。</span>
+            </div>
+        </div>
+    </div>
+    <div class="fot-center">
+        <div class="comwidth">
+            <ul class="left com-left">
+                <li>
+                    帮助中心
+                    <ul class="help">
+                        <li><a href="">购物流程</a></li>
+                        <li><a href="">积分规则</a></li>
+                        <li><a href="">积分绑定使用</a></li>
+                        <li><a href="">订单状态说明</a></li>
+                    </ul>
+                </li>
+                <li>
+                    配送方式
+                    <ul class="help">
+                        <li><a href="">免费配送地区</a></li>
+                        <li><a href="">配送范围</a></li>
+                        <li><a href="">收费标准</a></li>
+                    </ul>
+                </li>
+                <li>
+                    支付方式
+                    <ul class="help">
+                        <li><a href="">货到付款</a></li>
+                        <li><a href="">银联支付</a></li>
+                        <li><a href="">支付宝</a></li>
+                        <li><a href="">微信支付</a></li>
+                    </ul>
+                </li>
+                <li>
+                    客户服务
+                    <ul class="help">
+                        <li><a href="">售后及退换货</a></li>
+                        <li><a href="">在线客服</a></li>
+                    </ul>
+                </li>
+                <li>
+                    会员中心
+                    <ul class="help">
+                        <li><a href="">资料修改</a></li>
+                        <li><a href="">找回密码</a></li>
+                        <li><a href="">会员等级</a></li>
+                        <li><a href="">会员权益</a></li>
+                    </ul>
+                </li>
+                <li>
+                    招商专区
+                    <ul class="help">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">合作流程</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">供应商系统</a></li>
+                    </ul>
+                </li>
+                <li>
+                    关注我们
+                    <ul class="help">
+                        <li><a href="">招贤纳士</a></li>
+                        <li>
+                            <a class="left" href=""><img src="img/weibo.jpg" alt=""></a>
+                            <a class="right" href=""><img src="img/weixin-1.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="right tel">
+                <img src="img/rx.gif" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <div class="fot-bottom">
+        <div class="comwidth">
+            <ul class="content">
+                <li class="move">
+                    <a  href="">触屏版</a>
+                    <em>电脑版</em>
+                </li>
+                <li>ICP经营许可证：赣ICP备15000001号</li>
+                <li>24小时订购和服务热线：4001-677-077</li>
+                <li>Copyright 2008-2014，www.fstvgo.com 风尚购物 版权所有</li>
+                <li>本网站用字经北京北大方正电子有限公司授权许可</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/banner.js"></script>
+    <br/>
+    <br/>
+</body>
+</html>
